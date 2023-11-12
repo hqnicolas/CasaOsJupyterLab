@@ -1,6 +1,6 @@
 
 
-# CasaOs JupyterLab
+# CasaOs JupyterLab Docker Compose
 Runing JupyterLab Notebook on CasaOS Server with aarch64
 Based on [Konmeo/jupyterLab](https://hub.docker.com/r/konmeo/jupyterlab)
 - How to use:
