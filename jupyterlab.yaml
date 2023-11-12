@@ -1,0 +1,82 @@
+name: jupyterlab
+services:
+  jupyterlab:
+    command:
+      - /bin/bash
+      - -c
+      - jupyter lab --notebook-dir=/workspace --ip='*' --port=8888 --no-browser
+        --allow-root
+    environment:
+      - EDITOR=vi
+      - LANG=C.UTF-8
+      - NODE_VERSION=16.16.0
+      - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+      - SHELL=/bin/bash
+    image: konmeo/jupyterlab
+    ports:
+      - target: 8888
+        published: "3000"
+        protocol: tcp
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: /home/nicolas
+        target: /workspace
+    x-casaos:
+      envs:
+        - container: PATH
+          description:
+            en_us: ""
+        - container: LANG
+          description:
+            en_us: ""
+        - container: NODE_VERSION
+          description:
+            en_us: ""
+        - container: EDITOR
+          description:
+            en_us: ""
+        - container: SHELL
+          description:
+            en_us: ""
+      ports:
+        - container: "8888"
+          description:
+            en_us: ""
+      volumes:
+        - container: /workspace
+          description:
+            en_us: ""
+    devices: []
+    cap_add: []
+    network_mode: default
+    privileged: false
+    container_name: ""
+    cpu_shares: 90
+    deploy:
+      resources:
+        limits:
+          memory: 3973M
+x-casaos:
+  architectures:
+    - arm64
+  author: CasaOS User
+  category: unknown
+  description:
+    en_us: ""
+  developer: unknown
+  icon: ""
+  main: jupyterlab
+  scheme: http
+  store_app_id: jupyterlab
+  tagline:
+    en_us: github.com/hqnicolas/CasaOsJupyterLab
+  thumbnail: ""
+  tips:
+    custom: github.com/hqnicolas/CasaOsJupyterLab
+  title:
+    en_us: jupyterlab
+    custom: ""
+  hostname: ""
+  index: /
+  port_map: ""
