@@ -26,8 +26,8 @@ jupyter3-jupyter3-1  | [I 08:47:36.603 NotebookApp] http://4cf6b5297786:8888/?to
 6. Drop the token on your Jupyter Login Screen.
 - [This file](https://github.com/hqnicolas/CasaOsJupyter/blob/main/jupyter3.yaml) is Based on Comand:
 ```
-docker run -i -t -p 3001:8888 -v "$PWD":/workspace --name jupyter3 konmeo/jupyter /bin/bash -c "\
-jupyter notebook \
+docker run -i -t -p 3000:8888 -v "$PWD":/workspace --name jupyterlab konmeo/jupyterlab /bin/bash -c "\
+jupyter lab \
 --notebook-dir=/workspace --ip='*' --port=8888 \
 --no-browser --allow-root"
 ``` 
