@@ -16,7 +16,7 @@ published: "3000"
 - Now you can aceess: http://casaos.yourserver:3000
 - How to access the login token:
 1. On Casaos Home
-2. Click on Jupyter3 Config
+2. Click on JupyterLab Config
 3. Click on Terminal and Logs
 4. on Logs, Find this line:
 ```
