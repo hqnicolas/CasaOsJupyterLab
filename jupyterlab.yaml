@@ -20,7 +20,7 @@ services:
     restart: unless-stopped
     volumes:
       - type: bind
-        source: /home/nicolas
+        source: /home
         target: /workspace
     x-casaos:
       envs:
