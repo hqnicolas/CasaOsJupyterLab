@@ -24,7 +24,7 @@ Running at:
 jupyterlab-jupyterlab-1  | [I 2023-11-12 10:42:05.636 ServerApp] http://localhost:8888/lab?token=c5ad99bf763ebc0
 ```
 5. Take the token from Link above.
-6. Drop the token on your Jupyter Login Screen.
+6. Drop the token on your JupyterLab Login Screen.
 - [This file](https://github.com/hqnicolas/CasaOsJupyterLab/blob/main/jupyterlab.yaml) is Based on Comand:
 ```
 docker run -i -t -p 3000:8888 -v "$PWD":/workspace --name jupyterlab konmeo/jupyterlab /bin/bash -c "\
