@@ -2,7 +2,7 @@
 
 # CasaOs JupyterLab
 Runing JupyterLab Notebook on CasaOS Server with aarch64
-Based on [Konmeo/jupyter](https://hub.docker.com/r/konmeo/jupyterlab)
+Based on [Konmeo/jupyterLab](https://hub.docker.com/r/konmeo/jupyterlab)
 - How to use:
 1. On Casaos Home.
 2. click on "+".
@@ -11,9 +11,9 @@ Based on [Konmeo/jupyter](https://hub.docker.com/r/konmeo/jupyterlab)
 5. select the [Jupyter3.yaml](https://github.com/hqnicolas/CasaOsJupyter/blob/main/jupyter3.yaml)
 - to change your docker external port, edit the [Jupyter3.yaml](https://github.com/hqnicolas/CasaOsJupyter/blob/main/jupyter3.yaml):
 ```
-published: "3001"
+published: "3000"
 ```
-- Now you can aceess: http://casaos.yourserver:3001
+- Now you can aceess: http://casaos.yourserver:3000
 - How to access the login token:
 1. On Casaos Home
 2. Click on Jupyter3 Config
