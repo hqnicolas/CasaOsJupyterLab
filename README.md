@@ -4,6 +4,12 @@
 Runing JupyterLab Notebook on CasaOS Server with aarch64
 Based on [Konmeo/jupyterLab](https://hub.docker.com/r/konmeo/jupyterlab)
 - How to use:
+- install CasaOs
+```
+sudo apt-get update -y
+sudo apt-get install curl -y
+wget -qO- https://get.casaos.io/v0.4.7 | sudo bash
+```
 1. On Casaos Home.
 2. click on "+".
 3. Click on add custom image.
